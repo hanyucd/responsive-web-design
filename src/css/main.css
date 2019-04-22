@@ -74,7 +74,8 @@ body {
   padding: 0 3rem;
   color: #7c7a65;
 }
-.nav-main li a:hover {
+.nav-main li a:hover,
+.nav-main li a:active {
   color: rgb(195, 0, 255);
   background-color: #f8f6f1;
 }
@@ -404,4 +405,231 @@ body {
 .footer-box > p {
   text-align: center;
   color: rgb(158, 15, 224);
+}
+
+/**
+ * 响应式样式：
+ * 响应式的级别很高，rem 基于浏览器默认的 font-size，即 1rem = 16px
+ * 响应式单位推荐使用 em，和 rem效果一样，但兼容性更好
+ */
+
+ @media only screen and (max-width: 50em) {
+   /* 顶部导航区 */
+   .nav-top ul li a {
+     padding: 0 1rem;
+   }
+   .header-box > .nav-main > .logo-box {
+     float: none;
+     text-align: center;
+   }
+   .nav-main .logo {
+     margin: 1.5rem auto .5rem;
+   }
+   .nav-main ul {
+     float: none;
+     text-align: center;
+   }
+   .nav-main ul li {
+     border: none;
+   }
+   .nav-main ul li a {
+     padding: 0 1.5rem;
+   }
+
+   .trans-content .trans-data {
+     padding: 1rem 0.5rem;
+   }
+   .trans-data span {
+     font-size: 1.2rem;
+   }
+   .trans-data span.trans-money {
+     font-size: 1.6rem;
+     margin: 0;
+     padding: 0;
+     letter-spacing: inherit;
+     background: transparent;
+     box-shadow: none;
+   }
+   .trans-report a {
+     font-size: 1.2rem;
+   }
+
+   .main-product > .product-title {
+     float: none;
+     width: 100%;
+   }
+   .product-title h2 {
+     margin-top: 2rem;
+     font-size: 2.2rem;
+   }
+   .product-title h2 em {
+     display: inline-block;
+     font-size: 1.2rem;
+   }
+   .product-title h2 em:first-child {
+     margin-top: 0;
+   }
+   .product-content {
+     float: none;
+     width: 100%;
+   }
+   .product-item h3 span {
+     font-size: 2.4rem;
+   }
+   .product-item .product-info {
+     padding: 0;
+     font-size: 1.2rem;
+   }
+   .product-info .year-rate,
+   .product-info .money {
+     font-size: 2rem;
+   }
+   .buy-btn {
+     padding: 0 0 0 2rem;
+   }
+   .buy-btn a {
+     margin: 1.5rem auto;
+   }
+
+  .business-logo {
+    display: none;
+   }
+   .business-content ul {
+     float: left;
+     width: 20%;
+   }
+   .business-content ul li {
+     text-align: center;
+     font-size: 1.2rem;
+     line-height: 2rem;
+   }
+   .business-content ul li:first-child {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+	}
+ }
+
+ @media only screen and (min-width: 30em) and (max-width: 50em) {
+   .main-feature > .feature-item h3 {
+     display: block;
+     width: 100%;
+     font-size: 2.6rem;
+   }
+   .feature-item p {
+     display: block;
+     width: 100%;
+     font-size: 1.2rem;
+     text-align: center;
+   }
+ }
+
+ @media only screen and (max-width: 30em) {
+   .nav-top > .tel,
+   .nav-top ul li:nth-child(3),
+   .nav-top ul li:nth-child(4) {
+     display: none;
+   }
+   .nav-main ul li {
+     line-height: 3rem;
+   }
+   .nav-main ul li:first-child {
+     display: none;
+   }
+   .nav-main ul li a {
+     padding: 0 .5rem;
+   }
+
+   .main-transaction .trans-content {
+     padding: .5rem 0;
+   }
+   .trans-content .trans-data {
+     float: none;
+     padding: 0;
+     text-align: center;
+   }
+   .trans-content > .trans-report {
+     text-align: center;
+   }
+   .trans-report a {
+     padding: 0;
+   }
+
+   .main-box > .main-feature {
+    width: 96%;
+    margin: 1rem auto;
+  }
+  .main-feature > .feature-item {
+    display: block;
+    width: auto;
+ }
+ .feature-item + .feature-item {
+   margin: 1rem 0 0;
+ }
+
+ .main-box .main-notice {
+   width: 96%;
+   margin: 1rem auto;
+   font-size: 1.2rem;
+ }
+ .main-notice a {
+   margin-left: 1rem;
+ }
+ .main-notice a:first-child {
+   width: 60%;
+ }
+ .main-notice a:first-child::before {
+   content: '公告：';
+   color: #aaa;
+ }
+ .main-notice a span {
+   display: none;
+ }
+
+ .main-box .main-product {
+   width: 96%;
+ }
+ .product-title h2 {
+   margin-top: .5rem;
+ }
+ .product-title h2 span {
+   display: block;
+ }
+ .product-item h3 span {
+   margin-right: 0;
+   font-size: 2rem;
+ }
+ .product-item .product-info {
+   width: 70%;
+   float: right;
+   padding: 1rem 0;
+   border: none;
+ }
+ .product-info .year-rate,
+	.product-info .money {
+		font-size: 1.8rem;
+	}
+	.buy-btn {
+		float: none;
+		clear: both;
+		padding: 0 0 2rem;
+		width: 100%;
+	}
+	.buy-btn a {
+		max-width: 26rem;
+		margin: 0 auto;
+  }
+  
+  .business-content {
+		width: 98%;
+		margin: 0 auto;
+	}
+	.business-content ul li {
+		text-align: center;
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+	.business-content ul li:first-child {
+		font-size: 1.4rem;
+		line-height: 2.5rem;
+	}
 }
