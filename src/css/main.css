@@ -126,7 +126,8 @@ body {
 }
 
 .main-box > .main-ad {
-  display: none;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .main-box > .main-feature {
