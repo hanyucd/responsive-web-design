@@ -1,0 +1,28 @@
+{
+  "name": "responsive-web-design",
+  "version": "1.0.0",
+  "description": "css3 媒体查询实现响应式布局.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanyucd/responsive-web-design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanyucd/responsive-web-design/issues"
+  },
+  "homepage": "https://github.com/hanyucd/responsive-web-design#readme",
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-filter": "^5.1.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-replace": "^0.4.4",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^3.1.6"
+  }
+}
